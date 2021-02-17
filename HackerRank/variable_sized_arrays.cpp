@@ -51,33 +51,65 @@ using namespace std;
 
 int main()
 {
+    //The first line contains two space-separated integers
+    //denoting the respective values of  (the number of 
+    // variable-length arrays) and  (the number of queries).
     int n,q;
     cin>>n>>q;
 
+    //initialize
     int a[n];
+    int size[n];
 
-    bool b = true;
+    /*
+    Each line  of the  subsequent lines contains a 
+    space-separated sequence in the format k a[i]0 a[i]1 … a[i]k-1 
+    describing the -element array located at . */
+
     for(int i=0; i<n; i++)
     {
-        int n2;
-        cin>>n2;
-        int k[n2];
-        for(int j=0;j<n2;j++)
+        //k
+        int k;
+        cin>>k;
+
+        size[i] = k;
+
+        //initialize
+        int arr[k];
+
+        //Taking input for array
+        for(int j=0;j<k;j++)
         {
-            cin>>k[j];
+            cin>>arr[j];
         }
-        a[i] = k;
+
+        //storing the received array into the main array
+        a[i] = arr;
     }
 
+    /*
+    Each of the  subsequent lines contains two 
+    space-separated integers describing the respective 
+    values of  (an index in array ) and  (an index in the
+     array referenced by ) for a query.
+    */
+    
     for(int x=0; x<q;x++)
     {
         int i,j;
         cin>>i>>j;
+
         for(int y=0;y<n;y++)
         {
             if(y == i)
             {
-                for(int z=0; z<)
+                for(int z=0; z<size[y]; z++)
+                {
+                    if(z == j)
+                    {
+                        cout>>a[i][j]>>endl;
+                    }
+                }
             }
         }
     }
