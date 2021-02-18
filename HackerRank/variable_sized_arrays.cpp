@@ -99,20 +99,21 @@ int main()
         int i,j;
         cin>>i>>j;
 
-        for(int y=0;y<n;y++)
-        {
-            if(y == i)
-            {
-                for(int z=0; z<size[y]; z++)
-                {
-                    if(z == j)
-                    {
-                        cout>>a[i][j]>>endl;
-                    }
-                }
-            }
-        }
+        // for(int y=0;y<n;y++)
+        // {
+        //     if(y == i)
+        //     {
+        //         for(int z=0; z<size[y]; z++)
+        //         {
+        //             if(z == j)
+        //             {
+        //                 cout>>a[i][j]>>endl;
+        //             }
+        //         }
+        //     }
+        // }
     }
+
 
     return 0;
 }
