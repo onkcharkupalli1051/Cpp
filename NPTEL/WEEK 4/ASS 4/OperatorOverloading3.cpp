@@ -24,7 +24,7 @@ void complex::display()
 complex operator+(complex &t1, complex &t2)
 {
     complex sum;
-    sum.set_real(t1.real() + t2.img());
+    sum.set_real(t1.real() + t2.real());
     sum.set_img(t1.img() + t2.img());
     return sum;
 }
