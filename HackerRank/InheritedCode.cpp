@@ -39,7 +39,16 @@ All other validation is handled by the locked code in your editor.
 using namespace std;
 
 /* Define the exception here */
-
+class BadLengthException
+{
+	int n;
+	public:
+		BadLengthException(int _n){n = _n;}
+		int what()
+		{
+			return n;
+		}
+};
 
 bool checkUsername(string username) {
 	bool isValid = true;
