@@ -14,7 +14,7 @@ int main()
     int n,q;
     cin>>n>>q;
 
-    int Array[50][50];
+    vector <int> arr(n);
 
     for(int i=0;i<n;i++)
     {
@@ -22,15 +22,18 @@ int main()
         cin>>k;
         for(int j=0;j<k;j++)
         {
-            cin>>Array[i][j];
+            int val;
+            cin>>val;
+            arr[i].push_back(val);
         }
     }
 
-    for(int z=0;z<q;z++)
+    for(int z=0; z<q; z++)
     {
         int i,j;
         cin>>i>>j;
-        cout<<Array[i][j];
+        cout<<arr[i][j]<<endl;
     }
+
     return 0;
 }   
