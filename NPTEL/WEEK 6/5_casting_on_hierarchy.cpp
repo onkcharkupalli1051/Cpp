@@ -23,9 +23,9 @@ int main()
 
     /*error cannot convert from void * to class 
 
-    pv = pa;
-    pv = pb;
-    pv = pc;
+    pa = pv;
+    pb = pv;
+    pc = pv;
     */
     
     return 0;
