@@ -13,6 +13,7 @@ int main()
     // n=6;     error
     // *p = 7;      error
     p = &m;     //okay
-
+    *p = 8;
+    
     cout<<m<<endl<<*p;
 }
