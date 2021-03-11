@@ -14,6 +14,12 @@ int main()
     // *p = 7;      error
     p = &m;     //okay
     *p = 8;
-    
+
     cout<<m<<endl<<*p;
 }
+
+
+
+
+
+ 
